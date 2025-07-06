@@ -1,0 +1,186 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f2f5;
+}
+
+.admin {
+    width: 100%;
+    display: flex;
+}
+
+.logo {
+    width: 100%;
+    margin-top: 10%;
+    text-align: center;
+}
+
+.logo img {
+    width: 70%;
+}
+
+.menu {
+    width: 100%;
+    margin-top: 15%;
+}
+
+.menu button {
+    width: 90%;
+    height: 45px;
+    border-radius: 10px;
+    border: none;
+    background-color: white;
+    margin: 10px auto;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    padding-left: 15px;
+    font-size: 15px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.menu button i {
+    margin-right: 10px;
+    font-size: 18px;
+}
+
+.menu button:hover {
+    background-color: rgba(211, 211, 211, 0.5);
+}
+
+.leftbar {
+    width: 100%;
+    padding: 2rem;
+    min-height: 100vh;
+    background-color: #f9f9f9;
+    margin-left: 5%;
+    margin-top: 2%;
+}
+
+.leftbar h2 {
+    font-size: 28px;
+    margin-bottom: 10px;
+    color: #333;
+}
+
+.leftbar p {
+    font-size: 16px;
+    color: #555;
+}
+.dashboard {
+    width: 100%;
+    min-height: 100%;
+    padding: 1rem;
+    border-radius: 8px;
+}
+.total{
+    width: 100%;
+    height: 35vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    .thirddiv{
+        width: 33%;
+        height: 20vh;
+        background-color: #fff;
+        border: 1px solid rgba(0, 0, 0, 0.15);
+        margin: 0.5rem;
+        border-radius: 15px;
+        h3{
+            color: black;
+            font-weight: bolder;
+            font-size: 30px;
+            margin-left: 5%;
+            margin-top: 10%;
+        }
+        .flex-div{
+            display: flex;
+            width: 100%;
+            justify-content: space-around;
+            margin-top: 10%;
+            h5{
+                font-size: 15px;
+            }
+            span{
+                width: 50%;
+                margin-top: -2%;
+                button{
+                    width: 28%;
+                    height: 3vh;
+                    border-radius: 10px;
+                    border: none;
+                    background-color: #8fdf82;
+                    color: green;
+                }
+            }
+        }
+    }
+}
+.dark{
+   .leftbar {
+       background-color: black;
+       .thirddiv{
+           background-color: black;
+           border: 1px solid white;
+           color: white;
+           h3{
+               color: white;
+           }
+       }
+   }
+}
+.dark .yourvideos{
+    background-color: black;
+}
+.yourvideos{
+    width: 107.3%;
+    min-height: 100vh;
+    display: block;
+    background-color: #f9f9f9;
+    margin-top: -30%;
+    margin-left: -5%;
+
+    .add{
+        width: 100%;
+        min-height: 30vh;
+        display: flex;
+        justify-content: space-around;
+        h2{
+            color: white;
+            font-size: 40px;
+            font-weight: bold;
+        }
+        button{
+            width: 3%;
+            height: 5vh;
+            background-color: red;
+            color: white;
+            font-weight: bold;
+            font-size: 25px;
+            justify-content: center;
+            align-items: center;
+            display: flex;
+        }
+    }
+}
+.video-item{
+    width: 20%;
+    height: 70vh;
+    background-color: white;
+    border-radius: 10px;
+    border: 2px solid rgba(0, 0, 0, 0.15);
+    margin-top: -10%;
+    margin-left: 5%;
+    img{
+        width: 100%;
+        height: 60vh;
+        border-radius: 10px;
+    }
+}
+

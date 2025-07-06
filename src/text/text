@@ -1,0 +1,22 @@
+🔹 1. SideBar (Component/SideBar/Sidebar.jsx)
+Yon menyu (kategoriya, Home, Trending, Subscriptions…)
+
+Har doim chap tomonda bo‘ladi
+
+Layout strukturani to‘g‘ri ko‘rsatadi
+
+🔹 2. Navbar (Component/Navbar/Navbar.jsx)
+Yuqoridagi izlash paneli
+
+Layoutni to‘liq qilish uchun kerak
+
+🔹 3. VideoCard (Component/VideoAbout/VideoCard.jsx)
+Bitta video ko‘rinishini yasash
+
+Props orqali title, thumbnail, channel va h.k. qabul qiladi
+
+🔹 4. Home.jsx
+Video.js dan videos arrayni olib map qiladi
+
+Har bir video uchun VideoCard chaqiradi
+

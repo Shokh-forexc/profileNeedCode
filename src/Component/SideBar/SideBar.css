@@ -1,0 +1,132 @@
+.sidebar {
+    width: 72px;
+    float: left;
+    height: 100vh;
+    position: fixed;
+    top: 0;
+    left: 0;
+    box-shadow: 0 0 5px #000;
+    background: #000;
+    z-index: 999999999;
+    overflow-y: auto;
+    transition: width 0.3s ease;
+    img{
+        display: none;
+    }
+    .subscriptions{
+        display: none;
+    }
+}
+
+.sidebar.open {
+    width: 250px;
+    img{
+        display: block;
+    }
+    .subscriptions{
+        display: block;
+    }
+}
+
+.world {
+    width: 100%;
+    border-bottom: 1px solid white;
+    padding: 10px 0;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+    padding-left: 12px;
+}
+
+.logo img {
+    width: 50%;
+    margin-left: 10px;
+}
+
+.toggle-btn {
+    width: 90%;
+    margin: 8px auto;
+    height: 48px;
+    border-radius: 10px;
+    font-size: 20px;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    border: none;
+    background: transparent;
+    color: white;
+    padding-left: 12px;
+    gap: 15px;
+    cursor: pointer;
+    transition: background 0.2s;
+}
+
+.toggle-btn:hover {
+    background: rgba(255, 255, 255, 0.1);
+}
+
+.toggle-btn span {
+    white-space: nowrap;
+    overflow: hidden;
+    transition: opacity 0.3s;
+}
+.yourchannel, .subscriptions {
+    width: 100%;
+    padding: 10px 0;
+    border-bottom: 1px solid white;
+}
+
+.yourchannel h2,
+.subscriptions h4 {
+    margin-left: 16px;
+    font-size: 14px;
+    color: #fff;
+}
+
+.subscriptions h1 {
+    color: red;
+    text-align: center;
+    margin-top: 15%;
+    font-size: 18px;
+}
+
+/* Light mode uchun */
+.light .sidebar {
+    background: #fff;
+    color: black;
+    h2,h5,h4,h3,h1{
+        color: black;
+    }
+}
+
+.light .toggle-btn {
+    color: black;
+}
+
+.light .toggle-btn:hover {
+    background: rgba(0, 0, 0, 0.05);
+}
+@media (max-width: 768px) {
+    .sidebar {
+        width: 72px !important;
+    }
+
+    .sidebar.open {
+        width: 240px !important;
+    }
+
+    .toggle-btn {
+        font-size: 18px;
+        padding-left: 10px;
+    }
+
+    .toggle-btn span {
+        font-size: 14px;
+    }
+
+    .logo img {
+        width: 60%;
+    }
+}
